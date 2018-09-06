@@ -1,0 +1,82 @@
+.box, .box1 {
+	width: 100px;
+	height: 100px;
+	border-radius: 2px 2px 2px 2px;
+	border: 2px solid black;
+	background-color: grey;
+	margin: 20px auto;
+	transition: all 800ms; 
+}
+
+.big-blue {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	transition: all 800ms; 
+}
+
+/*добавляем класс для затемнения окна при вызове modal window*/
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.7;
+	display: none;
+}
+.show {
+	display: block;
+}
+
+.header {
+	background: rgba(0,0,0,.8);
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;	
+}
+
+.sticky {
+	position: absolute;
+}
+.header .menu {
+	float: left;
+}
+
+.header .menu li {
+	display: inline;
+}
+
+.header .menu li a {
+	color: 	white;
+	text-decoration: none;
+}
+.toggle {
+	color: 	#fff;
+	float: right;
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	.toggle {
+		display: block;
+	}
+	.menu {
+		display: none;
+	}
+	.menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.8);
+		padding: 0 15px;
+		border-top: 1px solid black;
+		z-index: 99;
+	}
+	.menu li {
+		display: block !important;
+	}
+}

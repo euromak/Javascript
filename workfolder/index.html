@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+<div class="header sticky">
+		<div class="container">	
+				<div class="menu">
+					<ul>
+						<li><a href="">lorem</a></li>
+						<li><a href="">lorem</a></li>
+						<li><a href="">lorem</a></li>
+						<li><a href="">lorem</a></li>
+						<li><a href="">lorem</a></li>
+					</ul>
+				</div>
+			<button class="btn btn-success toggle">Гамбургер</button>
+		</div>
+	</div>		
+
+
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="box"></div>
+		<div class="box1"></div>
+	</div>
+	<div class="row justify-content-center my-4">
+		<button class="btn btn-primary animated jackInTheBox" id="openModal">Открыть модальное окно</button>
+	</div>
+	
+</div>
+<div class="container">
+<div class="row justify-content-center">
+	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+	<div class="animate-container">
+	<img class="content-block" src="img/map.jpg" alt=""><br><br></div>
+	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+	<div class="animate-container">
+	<img src="img/map.jpg"  alt=""><br><br>
+	</div>
+	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+	<div class="animate-container">
+	<img src="img/map.jpg"  alt=""><br><br>
+	</div>
+</div>
+</div>
+	<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Заголовок окна</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Подпишись на новости и получишь подарок</p>
+      </div>
+      <div class="modal-footer">
+        <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">Нет, спасибо!</button>
+        <button type="button" class="btn btn-primary">Да, я хочу скидку!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
