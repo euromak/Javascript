@@ -1,0 +1,57 @@
+<!--Создаем Плэйлист, который будет заносить названия песен в список-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Playlist</title>
+	<style type="text/css">
+		form {
+			width: 50%;
+			margin: 20px auto;
+			text-align: center;
+		}
+
+		#button {
+			width: 150px;
+			background-color: white;
+			border: 2px solid orange; 
+		}
+	</style>
+	<script>
+/*Задаем обработчик событий click в отношении кнопки Добавить песню*/
+		window.onload = init; /*загрузка DOMa*/
+		function init() {
+			var button = document.getElementById("adButtonSong");
+			button.onclick = handleButtonClick;
+		}
+		function handleButtonClick() {
+/*Пишем обработчки для извлечения названия песни*/
+		var textInput = document.getElementById("textSong");
+		var songName = textInput.value;
+		if (songName == "") {
+			alert("Пожалуйста добавьте песню");
+		}
+		else {
+			alert("Песня " + songName + " добавлена");
+		}
+/*Создание нового елемента для размещения новой песни*/
+		var li = document.createElement("li");
+		li.innerHTML = songName;
+/*Добавление нового элемента в DOM*/	
+		var ul = document.getElementById("playlist");
+		ul.appendChild(li);	
+		}
+
+
+    </script>
+</head>
+<body>
+	<form>
+		<input type="text" id="textSong" name="textsong" size="40" placeholder="Введите название песни">
+		<input type="button" id="adButtonSong" name="button" value="Добавить">
+	</form>
+	<ul id="playlist">
+		
+	</ul>
+</body>
+</html>

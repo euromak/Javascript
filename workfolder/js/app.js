@@ -56,18 +56,18 @@
 //Создание плавающей шапки
 
 
-// $(window).scroll(function() {
-// 	var windowPosy = $(this).scrollTop();
-// 	var headerOffsetTop = $('.content-block').offset().top;
+ $(window).scroll(function() {
+	var windowPosy = $(this).scrollTop();
+	var headerOffsetTop = $('.content-block').offset().top;
 
-// 		if(windowPosy >= headerOffsetTop) {
-// 			$('.header').removeClass('sticky');
-// 		}
-// 		else {
-// 			$('.header').addClass('sticky');
-// 		}
+	if(windowPosy >= headerOffsetTop) {
+ 			$('.header').removeClass('sticky');
+		}
+		else {
+			$('.header').addClass('sticky');
+	}
 		
-// 	});
+	});
 
 //гамбургер
 $('.toggle').on('click', function() {
