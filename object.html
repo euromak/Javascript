@@ -18,7 +18,16 @@
 			rating: 5,
 			showtimes: ["5:00pm", "9:00pm"]
 		};
-		console.log(movie1);
+		var div = document.createElement('div');
+		div.innerHTML = 'Add new class';
+		document.body.appendChild(div);
+		div.className = "square";
+		div.style.width = '300px';
+		div.style.marginLeft = 'auto';
+		div.style.marginRight = 'auto';
+		div.style.textAlign = 'center';
+		div.appendChild(p);
+
 	</script>
 </body>
 </html>
